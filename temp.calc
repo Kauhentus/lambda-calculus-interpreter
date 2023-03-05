@@ -1,0 +1,9 @@
+x =: 2
+\x.m
+m n
+q
+
+true =: \x.\y.x
+false =: \x.\y.y
+
+(((\x.\y.\f.((f x) y) (z)) (q)) (\x.\y.y))

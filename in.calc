@@ -1,0 +1,19 @@
+true =: \x.\y.x
+false =: \x.\y.y
+
+pair =: \x.\y.\f.((f x) y)
+head =: \a.\b.a
+tail =: \a.\b.b
+nil =: \f.end
+
+list =: \h.\t.((pair h) t)
+l =: ((list i) ((list j) ((list k) nil)))
+
+(l head)
+((l tail) head)
+(((l tail) tail) head)
+((((l tail) tail) tail) head)
+
+ycomb =: \g.((\x.(g (x x))) (\x.(g (x x))))
+
+pfac =: \r.\n.((* n) (r (- n 1)))

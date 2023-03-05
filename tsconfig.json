@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "target": "ES6",
+      "baseUrl": "./src/index.ts",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "allowJs": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "strict": true,                        
+      "noImplicitAny": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true
+    }
+  }
+  

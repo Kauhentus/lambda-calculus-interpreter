@@ -1,0 +1,30 @@
+{
+  "name": "lambda-calculus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "nearleyc grammar.ne -o grammar.js",
+    "build": "npx webpack",
+    "run": "node ./dist/src/index.js",
+    "dev": "tsc --build && npm run run",
+    "dev2": "npm run compile && tsc --build && npm run run"
+  },
+  "author": "Josh Yang",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/moo": "^0.5.5",
+    "@types/nearley": "^2.11.2",
+    "i": "^0.3.7",
+    "npm": "^9.6.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^18.14.6",
+    "moo": "^0.5.2",
+    "nearley": "^2.20.1"
+  }
+}
